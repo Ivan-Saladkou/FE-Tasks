@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding:0;
+}
+@font-face {
+    font-family: MrDafoe;
+     src: url(font/MrDafoe-Regular.ttf);
+}
+header{
+    width: 955px;
+    height: 200px;
+      position: relative;
+    overflow: hidden;}
+
+    header:before{
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left:-100%;
+        z-index: -1;
+        background: url(image/social_icons.png) 0 0 repeat;
+        transform: rotate(-6deg);
+     
+    }
+
+
+.content{
+height: 240px;
+}
+
+.Bt-container1{
+    display: flex;
+    width: 175x;
+    flex-wrap:wrap;
+    margin-left:25px;
+    align-items: center;
+        
+}
+.Bt-container2{
+    display: flex;
+    width: 115px;
+    flex-wrap:wrap;
+    margin-left:25px;
+    align-items: center;
+        
+}
+
+.blackback{
+    background-color: #333333;
+    border: 1px solid #242424;
+    
+    }
+.whiteback{
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    }
+
+button{
+    border-radius: 5px;
+    border:1px  solid ;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    height: 20px;
+    width:50px;
+    font-size:6px;
+    font-weight:bold;
+    box-shadow: inset 0px 0px 1px#FFFFFF;
+    box-shadow: 0px 1px 3px black;
+   
+}
+.button-medium{
+    height: 25px;
+    width:60px;
+   }
+.button-big{
+ height: 35px;
+ width: 110px;
+ font-size:18px;
+}
+.button-pink{
+    background-color:#E84EA8;
+    
+}
+.button-green{
+    background-color:#A0C62D;
+}
+.button-blue{
+    background-color:#5299E9;
+}
+.button-red{
+    background-color:#E84545;
+}
+.button-orrange{
+    background-color:#E15000;
+    
+}
+.button-yellow{
+    background-color:#FFBF35;
+} 
+.blackborder{
+    border: 1px solid #001C0C;
+}
+.lightborder{
+    border: 1px solid #A0BEB1;
+}
+.line{
+    height: 125px;
+    width: 915px;
+    display: flex;
+    flex-direction: column;
+    padding-left:25px;
+    padding-top: 18px;
+    padding-bottom:18px;
+    margin: 10px;
+}
+.label{
+
+    border:2px solid #807F7F ;
+    outline:2px solid #000000;
+    font-size: 35px;
+    font-style: oblique;
+    color:#607B8F;
+     font-family: MrDafoe;
+     
+    
+}
+
+
+.container{
+    width:300px;
+    height: 55px;
+    background-color: white;
+    opacity: 0.8;
+    margin-left:350px;
+    margin-top:65px;
+   padding: 3px;
+}
