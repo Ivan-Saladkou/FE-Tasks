@@ -1,0 +1,19 @@
+.footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.footer_ic-conteiner{
+    display:flex;
+    margin-top: 4rem;
+}
+.footer_icon{
+    margin-left: 2rem;
+}
+.footer_icon:hover{
+ color:#E3AE57;   
+}

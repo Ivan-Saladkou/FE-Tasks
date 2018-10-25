@@ -1,0 +1,273 @@
+@media (max-width: 1024px){
+    .menu{
+        flex-wrap: wrap;
+    }
+    html{
+        font-size:10px;
+    }
+     .menu{
+        flex-wrap: wrap;
+    }
+    .card-large{
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .menu{
+        flex-wrap: wrap;
+    }
+    html{
+        font-size: 8px;
+    }
+     .menu{
+        flex-wrap: wrap;
+    }
+    .card-large{
+       width: 100vw;
+       height:50vh;
+    }
+    .card-menu{
+    height:400px;
+    }
+ 
+}
+
+@media (max-height: 320px) and (orientation:landscape){
+    .menu{
+        flex-wrap: wrap;
+    }
+    html{
+        font-size: 8px;
+    }
+     .menu{
+        flex-wrap: wrap;
+    }
+    .card-large{
+        width: 50vw;
+        height: 600px !important;
+    }
+}
+   
+ 
+}
+@media (max-width: 768px){
+    .menu{
+        flex-wrap: wrap;
+    }
+    html{
+        font-size: 10px;
+    }
+       .card-large{
+        height: 50vh;
+    }
+
+}
+
+@media (max-width: 414px)  {
+    
+        .menu{
+        flex-wrap: wrap;
+    }
+    .card-menu{
+        padding-right: 5rem;
+    }
+    html{
+        font-size: 5px;
+    }
+    .skills-line{
+        flex-wrap: wrap;
+    }
+    .skill-container{
+        height:  50%;
+        width: 50vw;
+    }
+    .card-large{
+        width:  100%;
+        height: 40vh;
+    }
+   
+
+    .start{
+        margin-left: 32%;
+        margin-bottom: 3rem;
+    }
+    .aboutme-line{
+       display: inline-block;
+       width: 100%;
+    }
+    .card-medium{
+        width: 100%;
+    }
+    .aboutme-cards{
+        width: 100%;
+    }
+    .testimonial_content{
+     
+        padding-left: 10rem;
+        padding-right:  10rem;
+    }
+    .contact{
+        flex-direction: column;
+
+    }
+     .contact_photo{
+        height: 40vh;
+    }
+    .sayhello{
+      margin: 0;
+      padding:0;
+    }
+    .sayhello_item{
+        width: 100%;
+    }
+    .sayhello_content{
+    margin: 3rem;
+
+    }
+ 
+}
+   
+@media (max-width: 320px)  {
+    
+        .menu{
+        flex-wrap: wrap;
+    }
+    .card-menu{
+        padding-right: 7rem;
+
+    }
+    html{
+        font-size: 5px;
+    }
+    .skills-line{
+        flex-wrap: wrap;
+    }
+    .skill-container{
+        height:  50%;
+        width: 50vw;
+    }
+    .card-large{
+        width:  100%;
+        height: 50vh;
+    }
+   
+
+    .start{
+        margin-left: 32%;
+        margin-bottom: 3rem;
+    }
+    .aboutme-line{
+       display: inline-block;
+       width: 100%;
+    }
+    .card-medium{
+        width: 100%;
+    }
+    .aboutme-cards{
+        width: 100%;
+    }
+    .testimonial_content{
+     
+        padding-left: 10rem;
+        padding-right:  10rem;
+    }
+    .contact{
+        flex-direction: column;
+
+    }
+     .contact_photo{
+        height: 40vh;
+    }
+    .sayhello{
+      margin: 0;
+      padding:0;
+    }
+    .sayhello_item{
+        width: 100%;
+    }
+    .sayhello_content{
+    margin: 3rem;
+
+    }
+ 
+}
+@media (min-width: 3000px) and (max-width: 4000px){
+   
+    html{
+        font-size: 20px;
+    }
+    
+    .card-large{
+        height: 100vh;
+    }
+
+}
+@media (min-width: 385px) and (max-width: 769px) {
+    
+        .menu{
+        flex-wrap: wrap;
+    }
+    .card-menu{
+        padding-right: 7rem;
+
+    }
+    html{
+        font-size: 6px;
+    }
+    .skills-line{
+        flex-wrap: wrap;
+    }
+    .skill-container{
+        height:  50%;
+        width: 50vw;
+    }
+    .card-large{
+        width:  100%;
+        height: 30vh;
+    }
+   
+    .card-menu{
+        height: 330px;
+    }
+    .start{
+        margin-left: 32%;
+        margin-bottom: 0.5rem;
+        width: 17rem;
+    }
+    .aboutme-line{
+       display: inline-block;
+       width: 100%;
+    }
+    .card-medium{
+        width: 100%;
+    }
+    .aboutme-cards{
+        width: 100%;
+    }
+    .testimonial_content{
+     
+        padding-left: 10rem;
+        padding-right:  10rem;
+    }
+    .contact{
+        flex-direction: column;
+
+    }
+     .contact_photo{
+        height: 40vh;
+    }
+    .sayhello{
+      margin: 0;
+      padding:0;
+    }
+    .sayhello_item{
+        width: 100%;
+    }
+    .sayhello_content{
+    margin: 3rem;
+
+    }
+ 
+}

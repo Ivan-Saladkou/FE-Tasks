@@ -1,0 +1,53 @@
+.contact{
+    display: flex;
+    font-size: 1.5rem;
+    background-color:#161616;
+    
+ }
+ .sayhello{
+   background-color:#E9724C;
+   
+ }
+ .sayhello_content{
+    display: flex;
+   flex-direction: column;
+   padding: 4rem;
+ }
+ .contact_photo{
+   background: url(../images/contact-img.jpg) 50% 50% no-repeat;
+   background-size: cover; 
+ }
+ .contacts_heading{
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+ }
+ .contacts-item{
+    display: flex;
+    margin-bottom: 1rem;
+ }
+ .contacts_icon{
+    margin-right: 2rem;
+ }
+ .contacts{
+    padding: 4rem;
+    padding-top:6rem;
+ }
+ .sayhello_item{
+    margin-bottom: 6rem;
+    background-color:#E9724C;
+    border-color: transparent;
+    border-bottom-color: #E3AE57;
+ }
+ .send{
+    width:25rem;
+    height:4rem;
+    border: 1px solid white;
+    border-radius: 30px;
+ }
+
+ .send:hover{
+    background-color:#E3AE57;
+    border-color: #FFFFFE;
+    color:#FFFFFE;
+}
+ input::-webkit-input-placeholder { color: white; }

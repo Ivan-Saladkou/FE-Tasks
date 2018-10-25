@@ -31,9 +31,16 @@ a{
 .text-black{
     color:#3B3C31;
 }
-
-
-
+.card-large{
+    width: 50%;
+}
+.card-medium{
+    flex:2;
+    width:50vw;
+}
+.card-small{
+    flex:1;
+} 
 .card-home{
    background: url(images/home-img.jpg) 50% 50% no-repeat;
    background-size: cover;
@@ -42,9 +49,6 @@ a{
 .card-menu{
     background-color: #F1E2D7;
 }
-.card-large{
-    width: 50%;
-    }
 
 .content{
     display: flex;
@@ -55,7 +59,6 @@ a{
     display:flex;
     margin-top: 4rem;
     margin-left: 9rem;
-
 }
 
 .logo-container{
@@ -79,7 +82,7 @@ a{
     color:#E3AE57;
 }
 
-.card-content{
+.card-menu_content{
     margin-left:4rem;
 }
 .welcome{
@@ -117,14 +120,6 @@ a{
     color:#FFFFFE;
     border-width: 2px;
 }
-.card-medium{
-    flex:2;
-    width:50vw;
-}
-.card-small{
-    flex:1;
-
-} 
 
 .skills-line{
    display: flex;
@@ -140,18 +135,16 @@ a{
 
 .about-text{
  font-size: 1.8rem;
- }
+}
 
  .abtext-container{
     margin: 3rem;
- }
-
+}
 
 .about-photo{
    background: url(images/about-img.jpg) 50% 50% no-repeat;
    background-size: cover;
-   
-   }
+}
 
 .skill-name{
     font-size: 3rem;
@@ -245,19 +238,19 @@ display: flex;
 
  .experiences_ex-photo{
 
-background: url(images/experience-img.jpg) 50% 50% no-repeat;
-background-size: cover;
-     }
+    background: url(images/experience-img.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
 
 .experiences_my-experiences{
-      background-color:#E9724C;
+   background-color:#E9724C;
 
 }
 .education_my-education{
-     background-color:#E3AE57;
+   background-color:#E3AE57;
 }
 .education_education-photo{
-    background: url(images/education-img.jpg) 50% 50% no-repeat;
+   background: url(images/education-img.jpg) 50% 50% no-repeat;
    background-size: cover;
 }
 
@@ -294,8 +287,6 @@ background-size: cover;
      background: url(images/quotes-bg.jpg) 50% 50% no-repeat;
      background-size: cover;
 
- 
-   
  }
  .testimonial_cover{
     background-color: black;
@@ -421,7 +412,7 @@ background-size: cover;
 
 }
 
-@media (max-width: 812px) and (orientation:landscape){
+@media (min-width: 769px) and (max-width: 1024px){
     .menu{
         flex-wrap: wrap;
     }
@@ -433,7 +424,10 @@ background-size: cover;
     }
     .card-large{
        width: 100vw;
-       height:100vh;
+       height:50vh;
+    }
+    .card-menu{
+    height:400px;
     }
  
 }
@@ -464,10 +458,7 @@ background-size: cover;
     html{
         font-size: 8px;
     }
-     .menu{
-        flex-wrap: wrap;
-    }
-    .card-large{
+       .card-large{
         height: 50vh;
     }
 
@@ -612,6 +603,74 @@ background-size: cover;
     }
 
 }
+@media (min-width: 320px) and (max-width: 769px) {
+    
+        .menu{
+        flex-wrap: wrap;
+    }
+    .card-menu{
+        padding-right: 7rem;
+
+    }
+    html{
+        font-size: 5px;
+    }
+    .skills-line{
+        flex-wrap: wrap;
+    }
+    .skill-container{
+        height:  50%;
+        width: 50vw;
+    }
+    .card-large{
+        width:  100%;
+        height: 30vh;
+    }
+   
+    .card-menu{
+        height: 270px;
+    }
+    .start{
+        margin-left: 32%;
+        margin-bottom: 0.5rem;
+        width: 17rem;
+    }
+    .aboutme-line{
+       display: inline-block;
+       width: 100%;
+    }
+    .card-medium{
+        width: 100%;
+    }
+    .aboutme-cards{
+        width: 100%;
+    }
+    .testimonial_content{
+     
+        padding-left: 10rem;
+        padding-right:  10rem;
+    }
+    .contact{
+        flex-direction: column;
+
+    }
+     .contact_photo{
+        height: 40vh;
+    }
+    .sayhello{
+      margin: 0;
+      padding:0;
+    }
+    .sayhello_item{
+        width: 100%;
+    }
+    .sayhello_content{
+    margin: 3rem;
+
+    }
+ 
+}
+
     
     
 

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+
+font-size:12px;
+font-family: "Source Sans Pro", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.text-regular{
+    font-size: 1.8rem;
+}
+.text-large{
+    font-size: 4.4rem;
+}
+.text-heading{
+    font-size: 2rem;
+}
+.text-white{
+    color:#FFFFFE;
+}
+.text-orange{
+    color:#E4B15E;
+}
+.text-grey{
+    color:#888888;
+}
+.text-black{
+    color:#3B3C31;
+}
+.card-large{
+    width: 50%;
+}
+.card-medium{
+    flex:2;
+    width:50vw;
+}
+.card-small{
+    flex:1;
+}
+ .card-XL{
+    width: 100%;
+ }

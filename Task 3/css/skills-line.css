@@ -1,0 +1,33 @@
+.skills-line{
+   display: flex;
+}
+.skill-container{
+    text-align: center;
+    vertical-align: center;
+    line-height: 3rem;
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.skill-icon{
+    font-size: 5rem;
+    text-align: center;
+    margin-top:4rem;
+}
+.skills-set{
+    margin-left:3rem;
+}
+.interface{
+  background-color:#E3AE57;
+}
+
+.media{
+  background-color:#E9724C;
+}
+.app{
+ background-color:#161616;
+}
+ .coding{
+background-color:#FFFFFF;
+ 
+}

@@ -1,0 +1,32 @@
+.testimonial_back{
+     background: url(../images/quotes-bg.jpg) 50% 50% no-repeat;
+     background-size: cover;
+
+ }
+ .testimonial_cover{
+    background-color: black;
+    opacity: 0.8;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+       
+     }
+ .testimonial_content{
+    text-align: center;
+    padding-left: 25rem;
+    padding-right:  25rem;
+ }
+ .testimonial_icon{
+    font-size: 4rem;
+
+    margin-bottom: 2rem;
+ }
+ .testimonial_citate{
+  font-size: 4rem;
+   margin-bottom: 5rem;
+ }
+
+ }
+ .testimonial_caption{
+    margin-bottom: 25rem;
+ }
