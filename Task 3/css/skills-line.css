@@ -1,7 +1,8 @@
-.skills-line{
-   display: flex;
+.skills-line {
+    display: flex;
 }
-.skill-container{
+
+.skill-container {
     text-align: center;
     vertical-align: center;
     line-height: 3rem;
@@ -9,25 +10,30 @@
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
-.skill-icon{
+
+.skill-icon {
     font-size: 5rem;
     text-align: center;
-    margin-top:4rem;
-}
-.skills-set{
-    margin-left:3rem;
-}
-.interface{
-  background-color:#E3AE57;
+    margin-top: 4rem;
 }
 
-.media{
-  background-color:#E9724C;
+.skills-set {
+    margin-left: 3rem;
 }
-.app{
- background-color:#161616;
+
+.interface {
+    background-color: #E3AE57;
 }
- .coding{
-background-color:#FFFFFF;
- 
+
+.media {
+    background-color: #E9724C;
+}
+
+.app {
+    background-color: #161616;
+}
+
+.coding {
+    background-color: #FFFFFF;
+
 }

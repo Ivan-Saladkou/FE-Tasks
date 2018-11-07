@@ -1,30 +1,32 @@
-.experiences{
-    display: flex;
-  }
-
-.education{
+.experiences {
     display: flex;
 }
 
-.experiences_ex-photo{
+.education {
+    display: flex;
+}
+
+.experiences_ex-photo {
 
     background: url(../images/experience-img.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
-.experiences_my-experiences{
-    background-color:#E9724C;
+.experiences_my-experiences {
+    background-color: #E9724C;
 
 }
-.education_my-education{
-    background-color:#E3AE57;
+
+.education_my-education {
+    background-color: #E3AE57;
 }
-.education_education-photo{
+
+.education_education-photo {
     background: url(../images/education-img.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
-.post{
+.post {
     display: flex;
     font-size: 2rem;
     align-items: center;
@@ -32,23 +34,27 @@
     margin-top: 1rem;
 }
 }
-.position{
+
+.position {
     font-size: 2.5rem;
 }
-.post_icon{
+
+.post_icon {
     font-size: 3rem;
     margin-right: 1.5rem;
 }
 
-.mymargin{
-     margin: 3rem;
+.mymargin {
+    margin: 3rem;
 
 }
- .my-experiences_date{
+
+.my-experiences_date {
     color: #673333;
     font-weight: bold;
- }
-  .my-education_date{
+}
+
+.my-education_date {
     color: #886D1E;
     font-weight: bold;
- }
+}

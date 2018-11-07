@@ -1,79 +1,88 @@
-.card-home{
-   background: url(../images/home-img.jpg) 50% 50% no-repeat;
-   background-size: cover;
-   height: 100vh;
+.card-home {
+    background: url(../images/home-img.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
-.card-menu{
+
+.card-menu {
     background-color: #F1E2D7;
 }
 
-.content{
+.content {
     display: flex;
     flex-wrap: wrap;
 }
 
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     margin-top: 4rem;
     margin-left: 9rem;
 }
 
-.logo-container{
-    position:absolute;
+.logo-container {
+    position: absolute;
     font-size: 2.4rem;
     margin-top: 3.8rem;
     margin-left: 11rem;
     text-shadow: #FFFCEF 1px 0px 0px;
     font-weight: bold;
 }
-.logo{
+
+.logo {
     color: #333333;
 }
-.menu-item{
+
+.menu-item {
     margin-right: 2rem;
     font-size: 1.3rem;
-    color:#666666;
+    color: #666666;
     width: 3rem;
 }
-.menu-item:hover{
-    color:#E3AE57;
+
+.menu-item:hover {
+    color: #E3AE57;
 }
 
-.card-menu_content{
-    margin-left:4rem;
+.card-menu_content {
+    margin-left: 4rem;
 }
-.welcome{
-    
+
+.welcome {
+
     font-size: 1.2rem;
     margin-top: 9rem;
 }
-.hello{
+
+.hello {
     margin-top: 3rem;
 }
 
-.description{
-    
+.description {
+
     margin-top: 3rem;
 
 }
-.name{
-     font-weight: bold;
+
+.name {
+    font-weight: bold;
 }
-.start{
-    color:#242C2C;
+
+.start {
+    color: #242C2C;
     font-size: 1.3rem;
     margin-top: 4.2rem;
     border-radius: 35px;
-    width:17rem;
-    height:4.8rem;
+    width: 17rem;
+    height: 4.8rem;
     background-color: transparent;
     border-width: 3px;
     border-color: #242C2C;
     font-weight: bold;
 }
-.start:hover{
-    background-color:#E3AE57;
-    border-color:#E9A05B;
-    color:#FFFFFE;
+
+.start:hover {
+    background-color: #E3AE57;
+    border-color: #E9A05B;
+    color: #FFFFFE;
     border-width: 2px;
 }
