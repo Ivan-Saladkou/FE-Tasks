@@ -12,34 +12,10 @@ html {
 a {
     text-decoration: none;
 }
-
-.text-regular {
-    font-size: 1.8rem;
+body{
+    font-weight: 300;
 }
 
-.text-large {
-    font-size: 4.4rem;
-}
-
-.text-heading {
-    font-size: 2rem;
-}
-
-.text-white {
-    color: #FFFFFE;
-}
-
-.text-orange {
-    color: #E4B15E;
-}
-
-.text-grey {
-    color: #888888;
-}
-
-.text-black {
-    color: #3B3C31;
-}
 
 .card-large {
     width: 50%;

@@ -2,6 +2,12 @@
     display: flex;
 }
 
+.aboutme-caption {
+    font-size: 2rem;
+    color: #E4B15E;
+   
+}
+
 .aboutme-cards {
     display: flex;
     width: 50%;
@@ -9,10 +15,17 @@
 
 .about-text {
     font-size: 1.8rem;
+    font-size: 2rem;
+    color: #888888;
+}
+
+.aboutme-heading {
+    font-size: 4.4rem;
+    color: #3B3C31;
 }
 
 .abtext-container {
-    margin: 3rem;
+    margin: 2.5rem;
 }
 
 .about-photo {
@@ -21,7 +34,14 @@
 }
 
 .myskills {
-    background-color: #E3AE57;
+    background-color: #E3AD62;
+    font-size: 1.8rem;
+    color: #FFFFFE;
+
+}
+
+.myskills_heading {
+    font-size: 4.4rem;
 }
 
 .myskills_content {
@@ -29,7 +49,10 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 2rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+
 }
 
 .myskills_progressbar-back {
@@ -62,15 +85,17 @@
 }
 
 .prbars_skill-name {
-    float: left;
+
     color: #242C2B;
 }
 
 .prbars_percent {
-    float: right;
+    color: white;
 }
 
 .prbars_info {
     font-weight: bold;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 }

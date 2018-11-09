@@ -2,9 +2,13 @@
     display: flex;
 }
 
+.skill-name-coding {
+    color: #3B3C31;
+}
+
 .skill-container {
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
     line-height: 3rem;
     font-size: 2.1rem;
     margin-top: 2rem;
@@ -23,17 +27,21 @@
 
 .interface {
     background-color: #E3AE57;
+    color: #FFFFFE;
 }
 
 .media {
     background-color: #E9724C;
+    color: #FFFFFE;
 }
 
 .app {
     background-color: #161616;
+    color: #FFFFFE;
 }
 
 .coding {
     background-color: #FFFFFF;
+    color: #888888;
 
 }

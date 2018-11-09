@@ -1,14 +1,14 @@
-.card-home {
+.header_card-home {
     background: url(../images/home-img.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.card-menu {
+.header_card-menu {
     background-color: #F1E2D7;
 }
 
-.content {
+.header_content {
     display: flex;
     flex-wrap: wrap;
 }
@@ -19,7 +19,7 @@
     margin-left: 9rem;
 }
 
-.logo-container {
+.header_logo-container {
     position: absolute;
     font-size: 2.4rem;
     margin-top: 3.8rem;
@@ -37,6 +37,7 @@
     font-size: 1.3rem;
     color: #666666;
     width: 3rem;
+    color: #888888;
 }
 
 .menu-item:hover {
@@ -51,20 +52,25 @@
 
     font-size: 1.2rem;
     margin-top: 9rem;
+    color: #888888;
 }
 
 .hello {
     margin-top: 3rem;
+    color: #3B3C31;
+    font-size: 4.4rem;
 }
 
 .description {
-
+    color: #888888;
     margin-top: 3rem;
+    font-size: 1.8rem;
 
 }
 
 .name {
     font-weight: bold;
+    color: #3B3C31;
 }
 
 .start {
@@ -78,6 +84,7 @@
     border-width: 3px;
     border-color: #242C2C;
     font-weight: bold;
+    outline: none;
 }
 
 .start:hover {

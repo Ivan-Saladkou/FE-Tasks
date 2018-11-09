@@ -8,8 +8,9 @@
     background-color: black;
     opacity: 0.8;
     height: 100%;
-    padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    vertical-align: middle;
 
 }
 
@@ -17,6 +18,8 @@
     text-align: center;
     padding-left: 25rem;
     padding-right: 25rem;
+    color: #FFFFFE;
+
 }
 
 .testimonial_icon {
@@ -30,8 +33,9 @@
     margin-bottom: 5rem;
 }
 
-}
 
 .testimonial_caption {
-    margin-bottom: 25rem;
+
+    font-size: 1.8rem;
+    color: #888888;
 }

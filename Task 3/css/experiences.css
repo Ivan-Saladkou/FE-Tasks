@@ -12,13 +12,37 @@
     background-size: cover;
 }
 
+.my-experiences_heading {
+    font-size: 4.4rem;
+}
+
+.my-experiences_content {
+    margin: 5rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+
+
 .experiences_my-experiences {
     background-color: #E9724C;
+    font-size: 1.8rem;
+    color: #FFFFFE;
 
 }
 
 .education_my-education {
     background-color: #E3AE57;
+    font-size: 1.8rem;
+    color: #FFFFFE;
+}
+
+.my-education_heading {
+    font-size: 4.4rem;
+}
+
+.my-education_content {
+    margin: 5rem;
+    margin-top: 3rem;
 }
 
 .education_education-photo {
@@ -28,15 +52,29 @@
 
 .post {
     display: flex;
+    flex-direction: row;
     font-size: 2rem;
-    align-items: center;
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
     margin-top: 1rem;
+
+
+
 }
+
+.post_specification {
+    display: flex;
+    align-items: flex-end;
 }
 
 .position {
     font-size: 2.5rem;
+
+}
+
+.appointment {
+    display: flex;
+    flex-direction: column;
 }
 
 .post_icon {
@@ -52,9 +90,11 @@
 .my-experiences_date {
     color: #673333;
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .my-education_date {
     color: #886D1E;
     font-weight: bold;
+    font-size: 1.4rem;
 }
