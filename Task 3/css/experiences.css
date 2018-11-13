@@ -57,16 +57,16 @@
     align-items: flex-start;
     margin-bottom: 3rem;
     margin-top: 1rem;
-
-
-
 }
 
 .post_specification {
     display: flex;
     align-items: flex-end;
 }
-
+.position_description{
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+}
 .position {
     font-size: 2.5rem;
 
@@ -90,11 +90,19 @@
 .my-experiences_date {
     color: #673333;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .my-education_date {
     color: #886D1E;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+}
+.my-experiences_caption{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.my-education_caption{
+    font-size: 1.6rem;
+    margin-top: 2rem;
 }
