@@ -40,6 +40,16 @@ class MonthNumber {
 
         }
     }
+    setNumber(num) {
+        this.number = num; {
+            if (this.number < 1) {
+                this.number = 1;
+            }
+            if (this.number > 12) {
+                this.number = 12;
+            }
+        }
+    }
     plus() {
         this.number++;
         if (this.number < 1) {
@@ -65,11 +75,13 @@ var body = document.body;
 var grid = document.createElement("table");
 grid.border = 1;
 grid.width = 400;
+
 grid.align = "center";
 grid.id = "grid";
 var month = document.createElement("caption");
 month.border = 1;
 month.align = "center";
+
 var currentDate = new Date();
 var currentDay = currentDate.getDate();
 var currentMonth = currentDate.getMonth() + 1;
@@ -78,12 +90,12 @@ var showingMonthNumber = new MonthNumber(currentMonth);
 
 var nextMonthButton = document.createElement("button");
 nextMonthButton.innerHTML = ">";
-nextMonthButton.style.cssText="font-size:50px;margin-left:925px;margin-top:80px;position:absolute;"
+nextMonthButton.style.cssText = "font-size:50px;margin-left:875px;margin-top:65px;position:absolute;"
 nextMonthButton.onclick = function() { nextButtonClick(); };
 
 var previousMonthButton = document.createElement("button");
 previousMonthButton.innerHTML = "<";
-previousMonthButton.style.cssText="font-size:50px;margin-left:380px;margin-top:80px;position:absolute;"
+previousMonthButton.style.cssText = "font-size:50px;margin-left:430px;margin-top:65px;position:absolute;"
 previousMonthButton.onclick = function() { previousButtonClick(); };
 
 var daysRow1 = document.createElement("tr");
@@ -250,21 +262,24 @@ function feelTableCells(Month) {
                 break;
             }
             document.getElementById("grid").rows[j].cells[i].innerHTML = dayNumber;
-    
+
             dayNumber++;
         }
         begin = 0;
-    
+
     }
- }
+}
 
 function formatTable(numberOftheMonth) {
-    for (j = 1; j <= 6; j++) {
+    var styleTd = "color:#E4E4E5; background-color:#131719;border:none; opacity:0.75 ;";
+    var styleTr = "border:1px solid #131719";
+    month.style.cssText = "color:#00B7C3; background-color:#131719;border:none; opacity:0.75 ;";
+    for (j = 0; j <= 6; j++) {
         for (i = 0; i <= 6; i++) {
-            document.getElementById("grid").rows[j].cells[i].style.cssText = "color:black;";
-            if (document.getElementById("grid").rows[j].cells[i].innerHTML == currentDay && numberOftheMonth==currentMonth){
-                //alert( document.getElementById("grid").rows[j].cells[i].innerHTML);
-                document.getElementById("grid").rows[j].cells[i].style.cssText = "color:red; font-weight:bold;";
+            document.getElementById("grid").rows[j].cells[i].style.cssText = styleTd;
+            document.getElementById("grid").rows[j].style.cssText = styleTr;
+            if (document.getElementById("grid").rows[j].cells[i].innerHTML == currentDay && numberOftheMonth == currentMonth) {
+                document.getElementById("grid").rows[j].cells[i].style.cssText = "color:#E4E4E5; background-color:#00B7C3";
             }
         }
     }
@@ -320,13 +335,13 @@ function MonthShow(year, counter) {
 
 
 
-feelTableCells(y2018.November);
 
 function nextButtonClick() {
 
     showingMonthNumber.plus();
     MonthShow(y2018, showingMonthNumber.number);
     formatTable(showingMonthNumber.number);
+
 
 }
 
@@ -336,7 +351,64 @@ function previousButtonClick() {
     formatTable(showingMonthNumber.number);
 
 
+
 }
 
 MonthShow(y2018, 11);
 formatTable(showingMonthNumber.number);
+
+var input = document.createElement("input");
+input.style.cssText = "margin-left:550px";
+body.appendChild(input);
+
+input.onkeydown = function() {
+    if (event.key == "/") {
+        return;
+    } else if (event.which == 8) {
+        return;
+    } else if (event.which < 48 || event.which > 57) { event.preventDefault() }
+
+};
+
+
+
+var findButton = document.createElement("button");
+findButton.innerHTML = "найти день";
+body.appendChild(findButton);
+var p = document.createElement("p");
+p.innerHTML = "введите дату в формате ДД/ММ";
+p.style.cssText = "margin-left:560px;margin-top 50px";
+body.appendChild(p);
+
+
+
+findButton.onclick = function() { findButtonclick(); };
+
+function findButtonclick() {
+    let d = input.value[0] + input.value[1];
+    let m = input.value[3] + input.value[4];
+    showingMonthNumber.setNumber(m);
+    MonthShow(y2018, Number(m));
+    formatTable(m);
+    lightFindingDay(Number(d));
+}
+
+
+
+
+
+function lightFindingDay(day) {
+    for (j = 0; j <= 6; j++) {
+        for (i = 0; i <= 6; i++) {
+            if (document.getElementById("grid").rows[j].cells[i].innerHTML == day)
+                document.getElementById("grid").rows[j].cells[i].style.cssText = " background-color:#5A5A5A;color:#E4E4E5;opacity:0.75";
+
+        }
+    }
+}
+
+// function catchErrors{
+//     try{
+
+//     }
+// }
