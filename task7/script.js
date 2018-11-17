@@ -72,15 +72,19 @@ class MonthNumber {
 
 
 var body = document.body;
+
+var calendarContainer = document.createElement("div");
 var grid = document.createElement("table");
 grid.border = 1;
-grid.width = 400;
+grid.width = 250;
 
-grid.align = "center";
+
+
 grid.id = "grid";
 var month = document.createElement("caption");
 month.border = 1;
 month.align = "center";
+grid.onclick = function() { putDatetToInput() };
 
 var currentDate = new Date();
 var currentDay = currentDate.getDate();
@@ -90,13 +94,27 @@ var showingMonthNumber = new MonthNumber(currentMonth);
 
 var nextMonthButton = document.createElement("button");
 nextMonthButton.innerHTML = ">";
-nextMonthButton.style.cssText = "font-size:50px;margin-left:875px;margin-top:65px;position:absolute;"
 nextMonthButton.onclick = function() { nextButtonClick(); };
 
 var previousMonthButton = document.createElement("button");
 previousMonthButton.innerHTML = "<";
-previousMonthButton.style.cssText = "font-size:50px;margin-left:430px;margin-top:65px;position:absolute;"
 previousMonthButton.onclick = function() { previousButtonClick(); };
+
+var input = document.createElement("input");
+input.style.cssText = "margin-left:25px";
+input.onkeydown = function() { mask() };
+input.onfocus = function() { calendarVisible() };
+
+var findButton = document.createElement("button");
+findButton.innerHTML = "найти день";
+findButton.onclick = function() {
+    findButtonclick();
+    calendarVisible();
+}
+
+var p = document.createElement("p");
+p.innerHTML = "введите дату в формате ДД/ММ";
+p.style.cssText = "margin-left:35px;margin-top 10px";
 
 var daysRow1 = document.createElement("tr");
 var d1_1 = document.createElement("td");
@@ -172,10 +190,15 @@ friday.innerHTML = "Пт";
 saturday.innerHTML = "Сб";
 sunday.innerHTML = "Вс";
 
-body.appendChild(nextMonthButton);
-body.appendChild(previousMonthButton);
-body.appendChild(grid);
+body.appendChild(p);
+body.appendChild(input);
+body.appendChild(findButton);
+body.appendChild(calendarContainer);
+calendarContainer.style.cssText = "display:none"
 
+calendarContainer.appendChild(previousMonthButton);
+calendarContainer.appendChild(grid);
+calendarContainer.appendChild(nextMonthButton);
 
 grid.appendChild(month);
 grid.appendChild(week_days);
@@ -242,9 +265,6 @@ daysRow6.appendChild(d6_5);
 daysRow6.appendChild(d6_6);
 daysRow6.appendChild(d6_7);
 
-
-
-
 function feelTableCells(Month) {
 
     var dayNumber = 1;
@@ -284,8 +304,6 @@ function formatTable(numberOftheMonth) {
         }
     }
 }
-
-
 
 function MonthShow(year, counter) {
     switch (counter) {
@@ -330,59 +348,63 @@ function MonthShow(year, counter) {
 
 }
 
-
-
-
-
-
-
 function nextButtonClick() {
-
     showingMonthNumber.plus();
     MonthShow(y2018, showingMonthNumber.number);
     formatTable(showingMonthNumber.number);
-
-
 }
 
 function previousButtonClick() {
     showingMonthNumber.minus();
     MonthShow(y2018, showingMonthNumber.number);
     formatTable(showingMonthNumber.number);
-
-
-
 }
 
 MonthShow(y2018, 11);
 formatTable(showingMonthNumber.number);
 
-var input = document.createElement("input");
-input.style.cssText = "margin-left:550px";
-body.appendChild(input);
 
-input.onkeydown = function() {
+
+function mask() {
     if (event.key == "/") {
         return;
     } else if (event.which == 8) {
         return;
-    } else if (event.which < 48 || event.which > 57) { event.preventDefault() }
+    } else if (event.which < 48 || event.which > 57) { event.preventDefault(); }
 
 };
 
+function calendarVisible() {
+    calendarContainer.style.cssText = "display:flex ;margin-top:30px ";
+    previousMonthButton.style.cssText = "height:50px; margin-top:60px;";
+    nextMonthButton.style.cssText = "height:50px; margin-top:60px;";
+}
+
+function calendarUnsvisible() {
+    calendarContainer.style.cssText = "display:none ";
+}
 
 
-var findButton = document.createElement("button");
-findButton.innerHTML = "найти день";
-body.appendChild(findButton);
-var p = document.createElement("p");
-p.innerHTML = "введите дату в формате ДД/ММ";
-p.style.cssText = "margin-left:560px;margin-top 50px";
-body.appendChild(p);
 
+function putDatetToInput() {
+    if (event.target.innerHTML == "&nbsp;") {
+        return;
+    }
+    if (event.target.tagName == "TD") {
+        let dd = event.target.innerHTML;
+        if (dd.length == 1) {
+            dd = "0" + dd;
+        }
+        let mm = String(showingMonthNumber.number);
 
+        if (mm.length == 1) {
+            mm = "0" + mm;
+        }
+        input.value = "";
+        input.value += dd + "/" + mm;
 
-findButton.onclick = function() { findButtonclick(); };
+    }
+}
 
 function findButtonclick() {
     let d = input.value[0] + input.value[1];
@@ -393,10 +415,6 @@ function findButtonclick() {
     lightFindingDay(Number(d));
 }
 
-
-
-
-
 function lightFindingDay(day) {
     for (j = 0; j <= 6; j++) {
         for (i = 0; i <= 6; i++) {
@@ -406,9 +424,3 @@ function lightFindingDay(day) {
         }
     }
 }
-
-// function catchErrors{
-//     try{
-
-//     }
-// }
