@@ -5,7 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
+const routes=[
+{path:'',component:TodolistComponent}
+]
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
