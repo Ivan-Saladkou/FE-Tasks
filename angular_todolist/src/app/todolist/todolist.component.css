@@ -1,0 +1,24 @@
+.section-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.list-section{
+    display: flex;
+    flex-direction: column;
+    flex:5;
+    margin-right: 10%;
+}
+.input-section{
+    flex:2;
+    
+}
+
+.task{
+    background-color: cornsilk;
+    border:1px solid black;
+}
+.header{
+    font-weight: bold;
+    font-size:20px;
+}

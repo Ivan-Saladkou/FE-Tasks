@@ -1,0 +1,28 @@
+<h1>
+  TODOLIST
+</h1>
+<div class="section-container">
+  <div class="input-section">
+    <p>
+      Введите заголовок задания
+    </p>
+    <input type="text" [(ngModel)]="head" placeholder="Введите заголовок">
+    <p>
+      Введите описание задания
+    </p>
+    <input type="text" [(ngModel)]="discription" placeholder="Введите описание">
+    <button (click)="addTask(head, discription)">Добавить</button>
+  </div>
+ 
+  <div class="list-section">
+      
+        
+              <div *ngFor="let task of tasks">
+                  
+                  <div class="task">
+                    <div class="header">{{task.header}}</div>
+                    <div>{{task.discription}}</div>
+                  </div>
+              </div>
+        
+</div>
